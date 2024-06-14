@@ -4,21 +4,14 @@ export function FormMotocycle(){
   const [value, setValue] = useState('');
 
   const formatCurrency = (value: string) => {
-    // Removendo caracteres que não são números
     const numericValue = value.replace(/[^\d]/g, '');
-
     if (numericValue.length === 0) return '';
-
-    // Adicionando zeros à esquerda se necessário
     const paddedValue = numericValue.padStart(3, '0');
-    
-    // Separando os centavos
     const integerPart = paddedValue.slice(0, -2);
     const fractionalPart = paddedValue.slice(-2);
-
-    // Convertendo para número e formatando como moeda
     const numberValue = parseFloat(`${integerPart}.${fractionalPart}`);
     return new Intl.NumberFormat('pt-BR', {
+
       style: 'currency',
       currency: 'BRL',
       minimumFractionDigits: 2,
@@ -28,10 +21,7 @@ export function FormMotocycle(){
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let inputValue = e.target.value;
-
-    // Remover caracteres não numéricos
     inputValue = inputValue.replace(/[^\d]/g, '');
-
     setValue(inputValue);
   };
 
