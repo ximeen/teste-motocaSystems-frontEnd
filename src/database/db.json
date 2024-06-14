@@ -1,0 +1,16 @@
+{
+  "motorcycles": [
+    {
+      "code": "#0002",
+      "model": "HONDA 500x",
+      "color": "VERMELHA",
+      "value": 15000,
+      "status": "Sem estoque",
+      "id": "b1c7"
+    },
+    {
+      "id": "80dc",
+      "teste": "ajklshdjkashjk"
+    }
+  ]
+}
