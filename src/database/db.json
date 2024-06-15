@@ -1,17 +1,20 @@
-
 {
   "motorcycles": [
     {
-      "code": "#0002",
-      "model": "HONDA 500x",
-      "color": "VERMELHA",
-      "value": 15000,
-      "status": "Sem estoque",
-      "id": "b1c7"
+      "id": "9437",
+      "code": "#0003",
+      "model": "HONDA CB 300F TWISTER",
+      "color": "PRETA",
+      "value": 30000,
+      "status": "emTransito"
     },
     {
-      "id": "80dc",
-      "teste": "ajklshdjkashjk"
+      "id": "978f",
+      "code": "#0001",
+      "model": "HONDA POP 101I",
+      "color": "BRANCA",
+      "value": 15000,
+      "status": "emEstoque"
     }
   ]
 }

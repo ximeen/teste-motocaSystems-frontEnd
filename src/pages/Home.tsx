@@ -1,7 +1,37 @@
 import { MagnifyingGlass } from "@phosphor-icons/react"
 import { Item } from "../components/Item"
+import { getMotorcycles } from "../api/GetMotorcycle"
+import { useQuery } from "@tanstack/react-query"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import { Button } from "../components/Button"
 
 export function Home() {
+  const [search, setSearch] = useState("")
+
+  const { data: motorcycles } = useQuery({
+    queryKey: ['motorcycles'],
+    queryFn: getMotorcycles,
+  })
+
+  if (!motorcycles) {
+    return
+  }
+
+    const filteredMotorcycles = motorcycles.filter((motorcycle) => {
+    const searchUpper = search.toUpperCase()
+
+    const code = motorcycle.code.includes(searchUpper)
+    const color = motorcycle.color.includes(searchUpper)
+    const name = motorcycle.model.includes(searchUpper)
+
+    const motorcycleFound = code || color || name
+
+    return motorcycleFound
+  })
+
+  const motorcyclesList = search.length > 0 ? filteredMotorcycles : motorcycles
+
 
   return (
     <div>
@@ -13,21 +43,25 @@ export function Home() {
               <MagnifyingGlass size={14} />
               <input
                 className="w-80 bg-transparent text-xs outline-none"
-                type="text"
                 placeholder="Buscar por código, nome e cor"
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
               />
             </div>
-            <a href="/register" className=" justify-center bg-blue-400 hover:bg-blue-500 transition-colors text-white font-semibold text-xs flex py-3 px-4 items-center gap-2 rounded">
-              <img src="/plus.svg" alt="" />
-              NOVO REGISTRO
-            </a>
+            <Link to={"/register"}>
+              <Button className="w-full">
+                <img src="/plus.svg" alt="" />
+                NOVO REGISTRO
+              </Button>
+            </Link>
           </div>
         </div>
 
         <div className="mt-6 flex flex-col gap-6">
-          <Item />
-          <Item />
-          <Item />
+          {motorcyclesList.map((motorcycle) => (
+            <Item key={motorcycle.id} motorcycle={motorcycle}/>
+          ))}
         </div>
       </div>
     </div>

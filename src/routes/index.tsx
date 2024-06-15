@@ -19,7 +19,7 @@ export function Routes(){
           element: <RegisterMotorcycle />
         },
          {
-          path:"/edit",
+          path:"/edit/:id",
           element: <EditMotorcycle />
         },
         {
