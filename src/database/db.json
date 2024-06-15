@@ -1,20 +1,12 @@
 {
   "motorcycles": [
     {
-      "id": "9437",
-      "code": "#0003",
-      "model": "HONDA CB 300F TWISTER",
-      "color": "PRETA",
-      "value": 30000,
-      "status": "emTransito"
-    },
-    {
-      "id": "123123a",
-      "code": "#0002",
-      "model": "CRF 1100L Africa Twin Adventure Sports MT",
+      "id": "b13445c0-52a5-4d1f-96d8-dbc650b4cb59",
+      "code": "#6287",
       "color": "BRANCA",
-      "value": 100000,
-      "status": "semEstoque"
+      "model": "TORNADO",
+      "status": "emEstoque",
+      "value": 2103200
     }
   ]
 }

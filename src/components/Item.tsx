@@ -49,7 +49,7 @@ export function Item({ motorcycle }: ItemProps) {
     emTransito: 'Em trânsito',
   }
 
-  const formattedValue = motorcycle.value.toLocaleString('pt-BR', {
+  const formattedValue = (motorcycle.value / 100).toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL',
   })

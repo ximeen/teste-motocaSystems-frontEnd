@@ -1,4 +1,4 @@
-import { MagnifyingGlass } from "@phosphor-icons/react"
+import {  CircleNotch, MagnifyingGlass } from "@phosphor-icons/react"
 import { Item } from "../components/Item"
 import { getMotorcycles } from "../api/GetMotorcycle"
 import { useQuery } from "@tanstack/react-query"
@@ -9,14 +9,28 @@ import { Button } from "../components/Button"
 export function Home() {
   const [search, setSearch] = useState("")
 
-  const { data: motorcycles } = useQuery({
+  const { data: motorcycles, isError } = useQuery({
     queryKey: ['motorcycles'],
     queryFn: getMotorcycles,
   })
 
-  if (!motorcycles) {
-    return
+  if (isError) {
+    return (
+      <div className="flex items-center justify-center flex-1 flex-col">
+        <h1 className="text-slate-200 text-2xl">Não foi possível carregar os dados.</h1>
+        <span className="text-slate-200/40">Por favor verifique a conexão com o Json Server.</span>
+      </div>
+    )
   }
+
+  if(!motorcycles){
+    return (
+      <div className="flex items-center justify-center flex-1 flex-col">
+        <CircleNotch className="animate-spin w-20 h-20 text-slate-200"/>
+      </div>
+    )
+  }
+
 
     const filteredMotorcycles = motorcycles.filter((motorcycle) => {
     const searchUpper = search.toUpperCase()

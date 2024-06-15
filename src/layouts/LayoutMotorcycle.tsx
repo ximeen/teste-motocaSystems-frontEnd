@@ -3,7 +3,7 @@ import { Header } from '../components/Header'
 
 export function LayoutMotorcycle() {
   return (
-    <div className="bg-violet-950 pb-20 min-h-screen">
+    <div className="bg-violet-950 pb-20 min-h-screen flex flex-col">
       <Header />
       <Outlet />
     </div>
