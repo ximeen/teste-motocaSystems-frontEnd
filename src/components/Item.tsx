@@ -33,7 +33,7 @@ export function Item({ motorcycle }: ItemProps) {
   }
 
   const statusStyle = tv({
-    base: 'px-3 leading-7 rounded-full text-sm ',
+    base: 'px-3 leading-7 rounded-full text-sm whitespace-nowrap',
     variants: {
       color: {
         emEstoque: 'text-green-500 bg-green-900',
@@ -56,19 +56,19 @@ export function Item({ motorcycle }: ItemProps) {
 
 
   return (
-    <div className="lg:font-medium bg-violet-900 rounded-lg lg:px-14 py-6 flex flex-col lg:flex-row justify-between items-center hover:bg-violet-900/80">
-      <div className='flex flex-col lg:flex-row justify-center lg:items-center'>
+    <div className="lg:font-medium bg-violet-900 rounded-lg px-6 lg:px-14 py-6 flex flex-col lg:flex-row justify-between  hover:bg-violet-900/80">
+      <div className='flex flex-col lg:flex-row lg:items-center'>
         <span className="mr-24 text-violet-500">{motorcycle.code}</span>
 
         <div className="text-slate-200 flex flex-col gap-3 flex-1">
-          <div className="flex gap-3 items-center">
-            <h2 className="font-semibold lg:text-lg ">Honda POP 110I</h2>
+          <div className="flex gap-3 items-center justify-between">
+            <h2 className="font-semibold lg:text-lg ">{motorcycle.model}</h2>
             <span className={statusStyle({ color: motorcycle.status })}>
             {formattedStatus[motorcycle.status]}
           </span>
           </div>
-          <span className="block">Valor: {formattedValue}</span>
-          <span>Cor: <strong className='uppercase font-normal'>{motorcycle.color}</strong></span>
+          <span className=" text-sm">Valor: {formattedValue}</span>
+          <span>Cor: <strong className='uppercase font-normal text-sm'>{motorcycle.color}</strong></span>
         </div>
       </div>
       <div className="flex gap-4 items-center w-full justify-around lg:w-auto mt-6 lg:mt-0">

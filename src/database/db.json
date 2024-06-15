@@ -9,12 +9,12 @@
       "status": "emTransito"
     },
     {
-      "id": "978f",
-      "code": "#0001",
-      "model": "HONDA POP 101I",
+      "id": "123123a",
+      "code": "#0002",
+      "model": "CRF 1100L Africa Twin Adventure Sports MT",
       "color": "BRANCA",
-      "value": 15000,
-      "status": "emEstoque"
+      "value": 100000,
+      "status": "semEstoque"
     }
   ]
 }

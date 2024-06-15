@@ -35,7 +35,7 @@ export function Home() {
 
   return (
     <div>
-      <div className="mx-14">
+      <div className="mx-7 lg:mx-14">
         <div className="border-b pb-5 border-slate-300/50 text-slate-300 flex flex-col lg:flex-row justify-between items-center">
           <h1 className="font-semibold text-2xl ">Tabela de Motos</h1>
           <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 mt-6 lg:mt-0">

@@ -9,6 +9,7 @@ export default {
       colors: {
         violet: {
           500: '#8C57FF',
+          800: '#41365C',
           900: '#312D4B',
           950: '#2A233C',
         },
@@ -26,6 +27,11 @@ export default {
         },
         red: {
           500: '#FF4C51',
+          900: '#55304C',
+        },
+        yellow: {
+          500: '#FFB400',
+          900: '#544146',
         },
       },
       fontFamily:{
