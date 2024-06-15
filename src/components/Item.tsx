@@ -5,6 +5,7 @@ import { queryClient } from '../lib/queryClient'
 import { tv } from 'tailwind-variants'
 import { deleteMotorcycle } from '../api/DeleteMotorcycle'
 import { Link } from 'react-router-dom'
+import { formatNumberToCurrencyBRL } from '../utils/FormatNumberToBRL'
 
 
 interface ItemProps{
@@ -49,11 +50,7 @@ export function Item({ motorcycle }: ItemProps) {
     emTransito: 'Em trânsito',
   }
 
-  const formattedValue = (motorcycle.value / 100).toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL',
-  })
-
+  const formattedValue = formatNumberToCurrencyBRL((motorcycle.value / 100))
 
   return (
     <div className="lg:font-medium bg-violet-900 rounded-lg px-6 lg:px-14 py-6 flex flex-col lg:flex-row justify-between  hover:bg-violet-900/80">

@@ -31,7 +31,6 @@ export function Home() {
     )
   }
 
-
     const filteredMotorcycles = motorcycles.filter((motorcycle) => {
     const searchUpper = search.toUpperCase()
 
@@ -53,10 +52,10 @@ export function Home() {
         <div className="border-b pb-5 border-slate-300/50 text-slate-300 flex flex-col lg:flex-row justify-between items-center">
           <h1 className="font-semibold text-2xl ">Tabela de Motos</h1>
           <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 mt-6 lg:mt-0">
-            <div className="border rounded border-slate-300/50 flex items-center gap-3 py-3 px-4">
-              <MagnifyingGlass size={14} />
+            <div className="border rounded border-slate-300/50 flex items-center gap-3 focus-within:border-slate-300 transition-all">
+              <MagnifyingGlass size={14} className="ml-4"/>
               <input
-                className="w-80 bg-transparent text-xs outline-none"
+                className="w-80 bg-transparent text-xs outline-none py-3 pr-4"
                 placeholder="Buscar por código, nome e cor"
                 type="text"
                 value={search}

@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+background: #2A233C;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(231 227 252 / 0.1); 
+opacity: .2px;
+border-radius: 30px;
+}
+
+::-webkit-calendar-picker-indicator {
+display: none;
+}
+body {
+  -webkit-font-smoothing: antialiased
+}

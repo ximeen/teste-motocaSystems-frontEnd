@@ -11,7 +11,7 @@ export function InputRoot({ label, className, children }: InputRootProps) {
   return (
     <div
       className={twMerge(
-        'text-sm focus-within:border-slate-200 py-3 px-4 relative border-slate-200/50 border rounded w-full',
+        'text-sm focus-within:border-slate-200 py-3 px-4 relative border-slate-200/50 transition-all border rounded w-full',
         className,
       )}
     >
