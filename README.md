@@ -42,17 +42,18 @@
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript]][Typescript-url]
 * [![Tailwindcss][Tailwindcss]][Tailwindcss-url]
-* [![Zod][Zod]][Zod-url]
-* [![ReactQuery][ReactQuery]][ReactQuery-url]
+<!-- * [![Zod][Zod]][Zod-url]
+* [![ReactQuery][ReactQuery]][ReactQuery-url] -->
 
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
 
 ## Sobre o projeto
 
 ![página inicial do projeto][homepage-screenshot]
 
-Este é a página inicial do projeto de teste da honda, feito com base no design disponibilizado no figma, foi utilizado reaproveitamento de componentes como o Header, como é comum em todas as rotas, modifica apenas o conteúdo, não sendo necessario recarregar os componentes da aplicação.
+Esta é a página inicial do projeto de teste da honda, feito com base no design disponibilizado no figma, foi utilizado reaproveitamento de componentes como o Header, como é comum em todas as rotas, modifica apenas o conteúdo, não sendo necessario recarregar os componentes da aplicação.
+
+<strong > `OBS: Foi colocado um delay na requisição de delete para ficar visível a animação de loading ao deletar um item.` <strong />
 
 ## Responsivo
 ![página inicial do projeto responsiva][homepageResponsive-screenshot]
