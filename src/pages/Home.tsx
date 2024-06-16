@@ -16,7 +16,7 @@ export function Home() {
 
   if (isError) {
     return (
-      <div className="flex items-center justify-center flex-1 flex-col px-8">
+      <div className="flex items-center justify-center flex-1 flex-col px-6">
         <h1 className="text-slate-200 text-2xl">Não foi possível carregar os dados.</h1>
         <span className="text-slate-200/40">Por favor verifique a conexão com o Json Server.</span>
       </div>
