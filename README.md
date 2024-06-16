@@ -63,8 +63,14 @@ Como atualmente dispositivos mobile são constantemente utilizados, tomei liberd
 
 
 ## Validações dos formulários
-![página inicial do projeto responsiva][formValidations]
+![Formulario][formValidations]
   Como os formulários são iguais nas duas páginas, foi componentizado, todos os inputs são validados e tipados para aceitar apenas dados corretos, e para o registro de novas motos, não é possível cadastrar uma moto com um código já existente.
+
+![ToastError][toastErrorCode]
+  Validação de código, não sendo possível cadastrar uma moto com um código já existente.
+
+![ToastSuccess][toastSuccessRegister]
+  Caso tenha sucesso no cadastro, toast de sucesso é exibido, e também o formulário é limpo automaticamente para caso o usuário precise cadastrar mais de uma moto, não precisar entrar a no formulário toda vez.
 
 ## Página de erro 
 ![página de error404][error404Page-screenshot]
@@ -164,6 +170,8 @@ Gabiel dos Santos Ximenes Ferreira
 [error404Page-screenshot]: public/readmeImages/error404Page.png
 [loadingErrorPage-gif]: public/readmeImages/loadingErrorPage.gif
 [formValidations]: public/readmeImages/formValidations.png
+[toastErrorCode]: public/readmeImages/toastErrorCode.png
+[toastSuccessRegister]: public/readmeImages/toastSuccessRegister.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Typescript]: https://img.shields.io/badge/Typescript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB

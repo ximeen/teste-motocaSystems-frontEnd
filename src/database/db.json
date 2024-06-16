@@ -23,6 +23,14 @@
       "model": "BIZ 125",
       "status": "emTransito",
       "value": 500000
+    },
+    {
+      "id": "7b8c126f-9b0c-4b5e-a94c-8c6777b0ce40",
+      "code": "#1222",
+      "color": "PRETO",
+      "model": "XRE 300 ",
+      "status": "semEstoque",
+      "value": 4220000
     }
   ]
 }
