@@ -27,13 +27,13 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Como começar</a>
+      <a href="#como-começar">Como começar</a>
       <ul>
-        <li><a href="#prerequisites">pre-requisitos</a></li>
-        <li><a href="#installation">Instalação</a></li>
+        <li><a href="#pré-requisitos">Pré-requisitos</a></li>
+        <li><a href="#como-baixar-e-instalar">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#contact">Contatos</a></li>
+    <li><a href="#contatos">Contatos</a></li>
   </ol>
 </details>
 
@@ -48,143 +48,97 @@
 
 
 ## Sobre o projeto
-
 ![página inicial do projeto][homepage-screenshot]
 
 Esta é a página inicial do projeto de teste da honda, feito com base no design disponibilizado no figma, foi utilizado reaproveitamento de componentes como o Header, como é comum em todas as rotas, modifica apenas o conteúdo, não sendo necessario recarregar os componentes da aplicação.
 
-<strong > `OBS: Foi colocado um delay na requisição de delete para ficar visível a animação de loading ao deletar um item.` <strong />
+<strong > `OBS: Foi colocado um delay na requisição de delete para ficar visível a animação de loading ao deletar um item.` </strong >
 
 ## Responsivo
 ![página inicial do projeto responsiva][homepageResponsive-screenshot]
 
 Como atualmente dispositivos mobile são constantemente utilizados, tomei liberdade para adaptar o projeto para uma versão mobile, utilizando da responsividade.
 
+<p align="right">(<a href="#criado-com">Voltar ao topo</a>)</p>
+
+
 ## Validações dos formulários
 ![página inicial do projeto responsiva][formValidations]
-  Como os formulários são iguais nas duas páginas, foi componentizado, todos os inputs são valídados, e tipados para aceitar apenas dados corretos.
+  Como os formulários são iguais nas duas páginas, foi componentizado, todos os inputs são validados e tipados para aceitar apenas dados corretos, e para o registro de novas motos, não é possível cadastrar uma moto com um código já existente.
 
 ## Página de erro 
 ![página de error404][error404Page-screenshot]
 
-Criado uma página de error, para caso o usuário tente acessar uma url diretamente.
+Criado uma página de error para caso o usuário tente acessar uma url que não existe.
 
 ## Loading de carregamento
 
 ![loading de error][loadingErrorPage-gif]
 
-  Para caso a aplicação não consiga carregar os dados da API, foi feito um loading e após a tentativa e ocorrer um erro disparado a aplicação aparece a mensagem de que não foi possível carregar os dados. 
+Para caso a aplicação não consiga carregar os dados da API, foi feito um loading e após a tentativa e ocorrer um erro disparado a aplicação aparece a mensagem de que não foi possível carregar os dados. 
 
 
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
+<p align="right">(<a href="#criado-com">Voltar ao topo</a>)</p>
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Como começar
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Abaixo são algumas instruções de como baixar e configurar o projeto para rodar localmente na sua maquina.
 
-### Prerequisites
+### Pré-requisitos
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Ter o node 20 instalado na maquina, abaixo como baixar nos principais sistema operacional.
+* macOs
   ```sh
-  npm install npm@latest -g
+    brew install node@20
+  ```
+  * Windows
+  ```sh
+    choco install nodejs-lts --version="20.14.0"
+  ```
+  * macOs
+  ```bash
+    <!-- Baixe o nvm -->
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+    <!-- Baixe o node especificando a versão -->
+      nvm install 20
   ```
 
-### Installation
+### Como baixar e instalar
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Faça o clone do projeto para a pasta que deseja
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/ximeen/teste-motocaSystems-frontEnd.git
    ```
-3. Install NPM packages
+   ou se tiver o github CLI
+   ```sh
+   gh repo clone ximeen/teste-motocaSystems-frontEnd
+   ```
+
+2. Instale as dependências
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Rode o comando abaixo para rodar a API fake do `Json Server`.
+   ```bash
+   npm run server
+   ```
+3. Após o server ser executado rode o comando abaixo para inicializar a aplicação.
+   ```bash
+   npm run dev
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
-## Contact
+## Contatos
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Gabiel dos Santos Ximenes Ferreira 
+-  WhatsApp: [Clique](https://wa.me/+5599991035812)
+-  Linkedin: [Clique](https://www.linkedin.com/in/ximenes-gabriel/)
+-  Email: gabriel.ximenes.sf@gmail.com
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<p align="right">(<a href="#criado-com">Voltar ao topo</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
