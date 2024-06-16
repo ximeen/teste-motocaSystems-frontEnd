@@ -1,14 +1,6 @@
 {
   "motorcycles": [
     {
-      "id": "b13445c0-52a5-4d1f-96d8-dbc650b4cb59",
-      "code": "#6287",
-      "color": "LARANJA",
-      "model": "TORNADO 250 2008",
-      "status": "emEstoque",
-      "value": 2103200
-    },
-    {
       "id": "dfd0580c-be2e-4d1c-a422-96ac92b55120",
       "code": "#1233",
       "color": "VERMELHA",
