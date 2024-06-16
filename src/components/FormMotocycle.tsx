@@ -20,9 +20,9 @@ const RegisterMotorcycleFormSchema = z.object({
   value: z.string({message: "Digite um valor válido"}).transform((value) => {
     return value.replace(/[^\d,.-]/g, '').replace(',', '').replace('.', '');
   }),
-  status: z.string().refine((value) => {
+  status: z.string({message: "Digite um status válido."}).refine((value) => {
     return statusValues.includes(value as Status)
-  }, {message: "Digite um status válido."}),
+  }),
 })
 
 export type RegisterMotorcycleFormSchema = z.infer<typeof RegisterMotorcycleFormSchema>

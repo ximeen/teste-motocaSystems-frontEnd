@@ -5,7 +5,7 @@
     <img src="public/readmeImages/logoMotoca.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">MotocaSystem</h3>
+<h3 align="center">MotocaDevs</h3>
 
   <p align="center">
     Projeto de integração a equipe de devs motoca.
@@ -18,9 +18,12 @@
   <summary>Conteúdos</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre o projeto</a>
+      <a href="#sobre-o-projeto">Sobre o projeto</a>
       <ul>
-        <li><a href="#built-with">Criado com</a></li>
+        <li><a href="#criado-com">Criado com</a></li>
+        <li><a href="#responsivo">Responsivo</a></li>
+        <li><a href="#validações-dos-formulários">Validações dos formulários</a></li>
+        <li><a href="#página-de-erro">Página de error 404</a></li>
       </ul>
     </li>
     <li>
@@ -34,23 +37,45 @@
   </ol>
 </details>
 
-
-## Sobre o projeto
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
-
-
-### Built With
+### Criado com
 
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript]][Typescript-url]
+* [![Tailwindcss][Tailwindcss]][Tailwindcss-url]
+* [![Zod][Zod]][Zod-url]
+* [![ReactQuery][ReactQuery]][ReactQuery-url]
+
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
+
+## Sobre o projeto
+
+![página inicial do projeto][homepage-screenshot]
+
+Este é a página inicial do projeto de teste da honda, feito com base no design disponibilizado no figma, foi utilizado reaproveitamento de componentes como o Header, como é comum em todas as rotas, modifica apenas o conteúdo, não sendo necessario recarregar os componentes da aplicação.
+
+## Responsivo
+![página inicial do projeto responsiva][homepageResponsive-screenshot]
+
+Como atualmente dispositivos mobile são constantemente utilizados, tomei liberdade para adaptar o projeto para uma versão mobile, utilizando da responsividade.
+
+## Validações dos formulários
+![página inicial do projeto responsiva][formValidations]
+  Como os formulários são iguais nas duas páginas, foi componentizado, todos os inputs são valídados, e tipados para aceitar apenas dados corretos.
+
+## Página de erro 
+![página de error404][error404Page-screenshot]
+
+Criado uma página de error, para caso o usuário tente acessar uma url diretamente.
+
+## Loading de carregamento
+
+![loading de error][loadingErrorPage-gif]
+
+  Para caso a aplicação não consiga carregar os dados da API, foi feito um loading e após a tentativa e ocorrer um erro disparado a aplicação aparece a mensagem de que não foi possível carregar os dados. 
+
+
+<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
 
 <!-- GETTING STARTED -->
@@ -175,10 +200,18 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: public/readmeImages/homepage.png
+[homepage-screenshot]: public/readmeImages/homepage.png
+[homepageResponsive-screenshot]: public/readmeImages/homepageResponsive.png
+[error404Page-screenshot]: public/readmeImages/error404Page.png
+[loadingErrorPage-gif]: public/readmeImages/loadingErrorPage.gif
+[formValidations]: public/readmeImages/formValidations.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Typescript]: https://img.shields.io/badge/Typescript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB
 [Typescript-url]: https://www.typescriptlang.org/
-
-
+[Tailwindcss]: https://img.shields.io/badge/Tailwindcss-20232A?style=for-the-badge&logo=tailwindcss&logoColor=61DAFB
+[Tailwindcss-url]: https://tailwindcss.com/
+[Zod]: https://img.shields.io/badge/Zod-20232A?style=for-the-badge&logo=zod&logoColor=61DAFB
+[Zod-url]: https://zod.dev/
+[ReactQuery]: https://img.shields.io/badge/ReactQuery-20232A?style=for-the-badge&logo=tanstack&logoColor=61DAFB
+[ReactQuery-url]: https://tanstack.com/query/latest
