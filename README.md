@@ -93,11 +93,11 @@ Ter o node 20 instalado na maquina, abaixo como baixar nos principais sistema op
   ```sh
     brew install node@20
   ```
-  * Windows
+* Windows
   ```sh
     choco install nodejs-lts --version="20.14.0"
   ```
-  * macOs
+* Linux
   ```bash
     <!-- Baixe o nvm -->
       curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
