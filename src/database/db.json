@@ -9,14 +9,6 @@
       "value": 2345000
     },
     {
-      "id": "065c6936-ce1e-437a-acd2-50a91be227ba",
-      "code": "#2233",
-      "color": "VERMELHA",
-      "model": "BROS 160",
-      "status": "semEstoque",
-      "value": 1231231
-    },
-    {
       "id": "c1595816-3a92-450e-8545-8e818af5bcc3",
       "code": "#3556",
       "color": "BRANCA",
@@ -31,6 +23,14 @@
       "model": "XRE 300 ",
       "status": "semEstoque",
       "value": 4220000
+    },
+    {
+      "id": "bfc8fcd1-78ef-4e2e-bc2e-9af07a16e840",
+      "code": "#1232",
+      "color": "AZUL",
+      "model": "BROS 160",
+      "status": "emEstoque",
+      "value": 1231233
     }
   ]
 }

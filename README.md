@@ -42,10 +42,10 @@
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript]][Typescript-url]
 * [![Tailwindcss][Tailwindcss]][Tailwindcss-url]
-<!-- * [![Zod][Zod]][Zod-url]
-* [![ReactQuery][ReactQuery]][ReactQuery-url] -->
 
+`Utilizado zod para validações dos inputs juntamente com o react hook forms para trabalhar com formulários.`
 
+`Axios para requisições HTTP, juntamente com tanstack query, para controle das requisições, maior perfomance e cache dos dados.` 
 
 ## Sobre o projeto
 ![página inicial do projeto][homepage-screenshot]
