@@ -52,7 +52,7 @@ export function FormMotocycle({ handleSubmitForm, isPending, isSuccess, isEdit, 
   ]
   const MOTORCYCLE_EXISTS = !!motorcycle?.code
 
-  const { handleSubmit, register, formState: { errors }, control, setValue, reset } = useForm<RegisterMotorcycleFormSchema>({
+  const { handleSubmit, register, formState: { errors }, control, reset, setValue } = useForm<RegisterMotorcycleFormSchema>({
     resolver: zodResolver(RegisterMotorcycleFormSchema),
     criteriaMode: 'all',
     mode: 'all',
@@ -62,7 +62,7 @@ export function FormMotocycle({ handleSubmitForm, isPending, isSuccess, isEdit, 
       model: motorcycle?.model,
       status: motorcycle?.status,
       value: motorcycle?.value
-        ? formatNumberToCurrencyBRL(motorcycle.value)
+        ? formatNumberToCurrencyBRL(motorcycle.value / 100)
         : undefined,
     },
   })
@@ -76,10 +76,13 @@ export function FormMotocycle({ handleSubmitForm, isPending, isSuccess, isEdit, 
   }
 
   useEffect(()=> {
-    if(isSuccess) reset( )
+    if(isSuccess) reset({
+      code: "",
+      color: "",
+      model: "",
+      status: "",
+    })
   } ,[isSuccess, reset])
-
-
 
   return(
     <form

@@ -64,8 +64,8 @@ export function Item({ motorcycle }: ItemProps) {
             {formattedStatus[motorcycle.status]}
           </span>
           </div>
-          <span className=" text-sm">Valor: {formattedValue}</span>
-          <span>Cor: <strong className='uppercase font-normal text-sm'>{motorcycle.color}</strong></span>
+          <span className="text-sm">Valor: {formattedValue}</span>
+          <span className='text-sm'>Cor: <strong className='uppercase text-sm'>{motorcycle.color}</strong></span>
         </div>
       </div>
       <div className="flex gap-4 items-center w-full justify-around lg:w-auto mt-6 lg:mt-0">

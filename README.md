@@ -88,7 +88,7 @@ Abaixo são algumas instruções de como baixar e configurar o projeto para roda
 
 ### Pré-requisitos
 
-Ter o node 20 instalado na maquina, abaixo como baixar nos principais sistema operacional.
+Ter o node 20 instalado na maquina. Abaixo como baixar nos principais sistemas operacionais.
 * macOs
   ```sh
     brew install node@20
@@ -116,7 +116,11 @@ Ter o node 20 instalado na maquina, abaixo como baixar nos principais sistema op
    gh repo clone ximeen/teste-motocaSystems-frontEnd
    ```
 
-2. Instale as dependências
+2. Entre na pasta do projeto usando o comando abaixo
+    ```sh
+    cd teste-motocaSystems-frontEnd
+    ```
+3. Instale as dependências 
    ```sh
    npm install
    ```
@@ -124,7 +128,7 @@ Ter o node 20 instalado na maquina, abaixo como baixar nos principais sistema op
    ```bash
    npm run server
    ```
-3. Após o server ser executado rode o comando abaixo para inicializar a aplicação.
+3. Após o server ser executado, abra outro terminal e rode o comando abaixo para inicializar a aplicação.
    ```bash
    npm run dev
    ```

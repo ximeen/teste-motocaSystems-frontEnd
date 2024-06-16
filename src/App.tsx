@@ -15,6 +15,7 @@ export function App(){
       rtl={false}
       pauseOnFocusLoss={false}
       draggable
+      toastClassName="bg-[#1d192a] text-gray-200"
       pauseOnHover
       theme="dark"
     />

@@ -47,7 +47,6 @@ export function EditMotorcycle() {
   }
   
   const motorcycle = motorcycles?.find((motorcycle) => motorcycle.id === id)
-  console.log(motorcycle);
 
   return (
     <div className="mx-14">

@@ -1,12 +1,13 @@
 import { House } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 
 export function Header(){
   return (
     <header className="flex justify-end gap-4 items-center py-7 px-11">
-    <a href="/">
+    <Link to="/">
       <House weight="fill" size={32} className="text-slate-300 hover:text-blue-400 transition-all" />
-    </a> 
+    </Link> 
     <div className="flex relative">
       <img
         className="w-11 aspect-square rounded-full hover:opacity-85 cursor-pointer"
